@@ -1,0 +1,119 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Grotesk";
+  color: rgb(var(--foreground-rgb));
+  background-color: #010101;
+  color: #fff;
+  background-image: url("assets/images/bodybg.png");
+  background-repeat: repeat;
+  background-position: top left;
+  background-size: contain;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+main {
+  width: 100vw;
+  overflow: hidden;
+}
+
+main .banner {
+  background-image: url("assets/images/bannerBackgrounds.png");
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @apply justify-end md:justify-center pb-20;
+}
+
+@font-face {
+  font-family: "GroteskLight";
+  font-style: normal;
+  font-weight: light;
+  src: url("assets/fonts/GroteskLight.otf");
+}
+
+@font-face {
+  font-family: "GroteskBook";
+  font-style: normal;
+  font-weight: normal;
+  src: url("assets/fonts/GroteskBook.otf");
+}
+
+@font-face {
+  font-family: "GroteskMedium";
+  font-style: normal;
+  font-weight: normal;
+  src: url("assets/fonts/GroteskMedium.otf");
+}
+
+@font-face {
+  font-family: "GroteskSemi";
+  font-style: normal;
+  font-weight: medium;
+  src: url("assets/fonts/GroteskSemiBold.otf");
+}
+
+@font-face {
+  font-family: "GroteskBold";
+  font-style: normal;
+  font-weight: 600;
+  src: url("assets/fonts/GroteskBold.otf");
+}
+
+main section.header {
+  background-image: url("assets/images/header.png");
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.swiper-wrapper {
+  transition-timing-function: linear;
+}
+
+h4 {
+  @apply font-normal uppercase lg:text-xl md:text-lg text-sm;
+}
+
+section > div {
+  @apply lg:px-32 md:px-16 px-6;
+}
+
+.caseStudy {
+  background-image: url("assets/images/bents.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.slick-prev,
+.slick-next {
+  display: none !important;
+}
