@@ -1,5 +1,6 @@
 import { Suspense } from 'react'
 import { IframeLoadingState } from './Youtube'
+import First from './../assets/images/testimonial.png';
 
 export default function Testimonial() {
   return (
@@ -11,7 +12,7 @@ export default function Testimonial() {
           <h2 className='text-base font-normal'>1. Memecoin $HAROLD Testimonial
             $3M MC ${'>'} $44M MC
           </h2>
-
+          <img src={First} alt="Testimonal" className='h-64 w-full' />
         </div>
         <div className="space-y-4">
           <h2 className='text-base font-normal'>2. GoArt Metaverse Testimonial </h2>
